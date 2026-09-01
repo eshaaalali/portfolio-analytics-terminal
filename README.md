@@ -1,8 +1,7 @@
 # Portfolio Analytics Terminal
 
 An interactive stock portfolio risk & return dashboard, styled after the Bloomberg Terminal — black background, amber accents, monospace type, multi-panel "workstation" layout. Built with Python, pandas, and Plotly. 
-https://eshaaalali.github.io/portfolio-analytics-terminal/
-
+<br> https://eshaaalali.github.io/portfolio-analytics-terminal/ </br>
 <img width="1600" height="1000" alt="dashboard_screenshot" src="https://github.com/user-attachments/assets/6173263d-db69-43d7-945c-11f8d0f23ee2" />
 
 
