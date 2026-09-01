@@ -2,7 +2,8 @@
 
 An interactive stock portfolio risk & return dashboard, styled after the Bloomberg Terminal — black background, amber accents, monospace type, multi-panel "workstation" layout. Built with Python, pandas, and Plotly.
 
-![Dashboard screenshot](assets/dashboard_screenshot.png)
+<img width="1600" height="1000" alt="dashboard_screenshot" src="https://github.com/user-attachments/assets/6173263d-db69-43d7-945c-11f8d0f23ee2" />
+
 
 ## What it does
 
@@ -49,6 +50,30 @@ portfolio_metrics.py     # data fetching + risk/return calculations
 dashboard.py             # Plotly figure construction and Bloomberg-style theming
 generate_sample_data.py  # builds the offline demo dataset
 sample_data/              # bundled synthetic price data for offline use
+output/                   # generated dashboard.html lands here
+assets/                   # README screenshot
+```
+
+## Metrics explained
+
+| Metric | Meaning |
+|---|---|
+| Annual Return | Mean daily return, annualised (× 252 trading days) |
+| Annual Volatility | Standard deviation of daily returns, annualised (× √252) |
+| Sharpe Ratio | (Annual Return − risk-free rate) / Annual Volatility. Risk-free rate assumed at 4%. |
+| Max Drawdown | Largest peak-to-trough decline in cumulative value over the period |
+
+## Possible extensions
+
+- Add a benchmark index (e.g. S&P 500) overlaid on the cumulative return chart
+- Add position sizing and portfolio-level (not just per-stock) return/volatility
+- Add a date-range selector
+- Deploy as a live Streamlit or Dash app instead of a static HTML export
+
+## License
+
+Free to use and modify.
+# portfolio-analytics-terminal
 output/                   # generated dashboard.html lands here
 assets/                   # README screenshot
 ```
